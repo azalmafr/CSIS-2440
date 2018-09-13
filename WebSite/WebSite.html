@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+<!-- omitting the <head>-->
+ <head>  
+<meta charset="UTF-8">
+    
+<title>Almafrachi</title>
+<style>
+    
+    
+*{
+    /* margin, padding text color, box sizing */
+    margin: 0;
+    padding: 0;
+    color: #24221f;
+    box-sizing: border-box;
+}
+
+body{ 
+    /* background color of the page, font family, font size */       
+    background-color: #f4f1fd;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+header h2{
+  /* text- align, position, margin, padding */   
+    object-position: left;
+    margin: 150px 0px 0px 0px;
+    padding:  10px 0px 1px 0px; 
+    text-transform: capitalize;
+    font-family:  'Dancing Script', cursive;
+    color: #e67e22;
+    word-spacing: 2px;
+    text-align: center;  
+}
+header h1 {
+    /* margin, padding, text align */
+    object-position: left;
+    margin: px 0px 0px 0px;
+    padding:  px 0px 1px 0px; 
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: #e67e22;
+    word-spacing: 2px;
+    text-align: center;   
+}           
+header{ 
+/* padding, height, font color */
+    padding: 20px 10px 130px 20px;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.37)), url(https://images.unsplash.com/photo-1503409098-1e546aa1af1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=975354c153aada0a303d816b77788d66&auto=format&fit=crop&w=967&q=80) ; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.36)), url(https://images.unsplash.com/photo-1503409098-1e546aa1af1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=975354c153aada0a303d816b77788d66&auto=format&fit=crop&w=967&q=80);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    color: rgba(155, 209, 222, 0.88);
+}
+            
+header img {
+/* margin, border-redius, height, width */
+    background-attachment: fixed;
+    margin-top: auto;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    object-position: top right;
+}
+header img :link,
+           :visited{
+               -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition border-bottom: 0.2s, color 0.2s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.36));
+}
+
+header ul{
+/* Navigation Bar,  float, width, margin */
+    float: right;
+    width: 50%;
+    margin-top:  px;
+
+}
+ /*padding, border, transiton, transition border  */
+ header ul :link,
+          :visited{
+       padding: 30px 25px 0px 10px;       
+    border-bottom: 1px ;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition border-bottom: 0.2s, color 0.2s;
+}
+ header ul a:hover,
+           a:active{
+    color: #e67e22;
+    border-bottom: 1px solid transparent;
+}
+header li a{
+/* font style, text align, font size, font color, text decoration  */
+    font-family: serif;
+    text-align: left;
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header li .navbar {
+    overflow: hidden;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+  padding: 0px 44px 40px 0px;
+  
+}
+
+.dropdown .dropbtn {
+    font-size: 25px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 30px 0px 0px;
+    background-color: inherit;
+    font-family: serif;
+    margin: 0;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ /* display  */
+header li{
+    display: inline;
+    
+}
+/* margin */
+main{
+    margin-top: 100px
+}
+/* text- align  */
+main div.herotext{
+    text-align: center;
+}
+/* margin, padding, border  */
+main div.herotext h1{
+    font-family: 'Bellefair', serif;
+    font-weight:lighter;
+    margin: 20px 30% 20px 30%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid red
+    
+}
+
+main div.herotext article{
+
+    font-family: 'Bellefair', serif;
+}
+/* margin, width, height, border, float, border rasius, box shadow , Animations , transitio , overflow  */
+section div.goals{
+    background: linear-gradient(to right, #ffb574, rgba(255, 255, 255, 0.72));
+    margin: 180px 35px 0px 0px;
+    width: 25%;
+    height: 80px;
+    border: 1px solid hsla(215, 30%, 52%, 0.27);
+    border-radius: 20px;
+    text-align: center;
+    float: right;
+    font-family: 'Cormorant Garamond', serif;
+    border-radius: 15px 50px;
+    box-shadow: 5px 10px #888888;
+    -webkit-transition:  height 1s; 
+    transition:  height 1.7s;
+    overflow: hidden;
+}
+section div.goals:hover {
+    height: 350px;
+    
+}
+
+/* padding  */
+section div.goals h4{
+    padding: 20px 0 70px 0;
+    
+}
+/* list style  */
+section div.goals li{
+    list-style-type:none;
+}
+ /* margin, width, heigh, border, float, Animations , transitio , overflow   */           
+section div.Interests{
+    background: linear-gradient(to right, #eab689, rgba(234, 150, 76, 0.72));
+    margin: 180px 110px 0px 0px;
+    width: 25%;
+    height: 80px;
+    border: 1px solid hsla(215, 30%, 52%, 0.27);
+    border-radius: 20px;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    box-shadow: 5px 10px #888888;   
+    -webkit-transition:  height 1s; 
+    transition:  height 1.7s;
+    overflow: hidden;
+}
+
+section div.Interests:hover {
+    height: 350px;
+}
+/* padding  */
+section div.Interests h4{
+    padding: 20px 0 70px 0;
+}
+/*list style  */
+section div.Interests li{
+    
+    list-style-type:none;
+}
+    
+ /* margin, width, heigh, border, float, Animations , transitio , overflow */           
+section div.fav{
+    background: linear-gradient(to right, #f4f4f4, rgba(234, 150, 76, 0.72));
+    margin: 180px 100px 0px 0px;
+    
+    width: 25%;
+    height: 80px;
+    border: 1px solid hsla(215, 30%, 52%, 0.27);
+    border-radius: 20px;
+    text-align: center;
+    float: right;
+    font-family: 'Cormorant Garamond', serif;
+    border-radius: 50px 20px;
+    box-shadow: 5px 10px #888888;  
+     -webkit-transition:  height 1s; 
+    transition:  height 1.7s;
+    overflow: hidden;
+}
+section div.fav:hover {
+    height: 350px;
+}
+section div.fav h4{
+    padding: 25px 0 30px 0;
+}
+
+section div.fav dl{
+    text-align: left;
+}
+     
+section dl{
+    padding-left: 20px;
+}
+            
+section samp{
+    color:red;
+    font-weight:bold;
+}
+ /* margin, width, heigh, border, float  */  
+#work{
+    width: 300px;
+    height:100px;
+    margin: 55% 0px 20px 500px;
+    text-align: center;
+    font-family: 'Bellefair', serif;
+    font-weight:lighter;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom:9px;
+    border-bottom: 1px solid red
+}
+     /* width, ;height */  
+table{
+    height:500%;
+    width:500%;
+    table-layout: fixed;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),url(https://images.unsplash.com/photo-1498830204877-434556b153df?ixlib=rb-0.3.5&s=628c104740a0d549039f4a4d1baeaa43&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} 
+ /* margin, width, heigh  */  
+section div.work{
+    
+    width: 250px;
+    height: 50px;
+    margin: 100px 20px 0px 5px;
+    
+ 
+}
+ /* padding, border  */  
+section table, td{     
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: white;
+  border-bottom: solid 1px rgb(0, 0, 0);
+   }  
+ /* border  */  
+section table, th, td {
+    border: 1px solid black;
+}
+ /* padding  */         
+section table th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 25px;
+    font-family: 'Bellefair', serif;
+  color: #d9d9d9;
+  text-transform: uppercase;
+    
+}
+ /* margin, width, heigh, border  */  
+section #ex{
+    width: 300px;
+    height:100px;
+    margin: 400px 470px 0 470px;
+    text-align: center;
+    font-family: 'Bellefair', serif;
+    font-weight:lighter;
+    font-size: 40px;
+    border-bottom: 1px solid red
+}
+ /* margin, padding, overflow  */  
+nav{
+    padding:0px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
+    overflow: hidden;
+    background-color: #000;
+   
+}
+ /* display, list style type, image opacity  */  
+nav li{
+    display: inline;
+    list-style-type: none;
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+     
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+/* image opacity  */  
+nav li:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    
+}
+ /* margin, overflow, float  */  
+nav div.handtools{
+    
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+    transition: width 2s, height 2s, transform 2s;
+}
+ 
+
+/* margin, overflow, float  */  
+nav div.powertools{
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+/*  float  */  
+nav div.cable{
+    float: right;
+}
+/*  float  */ 
+nav div.network{
+    float: right;
+}
+/*  float  */  
+nav div.html{
+    float: right;
+}
+/*  float  */
+nav div.css{
+    float: right;
+}
+/*  float  */
+nav div.java{
+    float: right;
+}
+/*  float  */
+nav div.php{
+    float: right;
+}
+ 
+/*  margin  */            
+aside{
+    margin: 200px;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(http://www.freepngimg.com/download/graphic_design/1-2-graphic-design-png-hd.png) 30% round;
+}
+/*  width, height, margin  */
+iframe {
+    width: 900px;
+    height: 400px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+}
+/*  padding  */
+section div.end{
+    background: url(http://www.freepngimg.com/download/graphic_design/1-2-graphic-design-png-hd.png) left top no-repeat, url(https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia-logo_%28inverse%29.png)  right bottom no-repeat;
+    background-size: 300px 300px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.41);
+    padding: 50px;
+}
+            
+details address{
+    color: rgba(244, 244, 244, 0.53);
+    margin:0 20% 0 220px;
+    
+    
+}
+            
+summary{
+    color: #4e4b4b;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+/*  margin  */            
+footer {
+    color: rgba(0, 0, 0, 0.45);
+    clear: left;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+</style>
+
+</head> 
+<body>
+    
+<!-- header -->  
+<header> 
+  <!-- nav bar --> 
+    <ul>
+      
+        <li><a href="#me" >About</a></li>
+        <li><a href="#work" >Work History</a></li>
+        <div class="dropdown">
+    <button class="dropbtn">Projects 
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="http://ec2-13-58-50-74.us-east-2.compute.amazonaws.com/WhoAmI.php 
+" target="_blank">Assignment 1</a>
+      <a href="http://ec2-13-58-50-74.us-east-2.compute.amazonaws.com/FriendsAndFamily.php
+" target="_blank">Assignment 2</a>
+      <a href="http://ec2-13-58-50-74.us-east-2.compute.amazonaws.com/FriendsAndFamily.php
+" target="_blank">Assignment 3</a>
+      
+        <a href="http://ec2-13-58-50-74.us-east-2.compute.amazonaws.com/E/home.php" target="_blank">E-Commerce site</a>
+        <a href="http://ec2-13-58-50-74.us-east-2.compute.amazonaws.com/Index.html" target="_blank">ShowCase-Website</a>
+        
+    </div>
+          
+        <li><a href="" >Contact Me</a></li>
+
+    </ul>
+
+    
+             
+<!-- logo image --> 
+<img src="http://i63.tinypic.com/20hng3l.png" alt="Ahmed Almafrachi" width="304" height="228">
+    <h2>It all About the First Impression!</h2><br><h1>Let's Help You Make a Perfect Impression</h1>
+</header>
+    
+<!-- main -->        
+<main>
+<div class="herotext">
+     <H1 id="me"> LETS TALK ABOUT ME</H1>  
+<article>
+<p>My Name is Ahmed Almafrachi 24 years old, I'm from Iraq, I moved to United State in 2014  I live in Salt Lake City, Utah, .<br> Study Computer Sience at the Salt Lake Community Collage, Work with Google fiber Network trobleshooting.</p>
+</article>
+    
+    
+</div>
+    
+
+    
+<!-- the 3 boxes of my goals, and intrests, my favurte --> 
+<section> 
+                
+<div class="goals">
+<h4>My Goals</h4>
+
+                
+<ol>
+    <li>Get done with the Computer Sience Dgree.</li>
+    <li>Find job in softwre engineer</li>
+</ol> 
+</div>                    
+</section>
+<!-- section def interests --> 
+<section> 
+        
+<div class="Interests">
+<h4>My Interests</h4>
+
+ 
+<ul>
+    <li>Everything about Computers</li>
+    <li>Hardware</li>
+    <li>software</li>    
+    <li>Machine learning</li>
+    <li>self driving</li>
+</ul>
+</div>
+</section>
+   <!-- section def my fav -->    
+<section> 
+        
+<div class="fav">
+<h4>My Favorite</h4>
+
+        
+<dl>
+    <dt>  Hot drink</dt>
+        <dd>- coffe, Black tea</dd>
+    <dt>  Cold drink</dt>
+        <dd>- Pepsi</dd>
+    <dt>  Color</dt>
+        <dd>- <samp>Red</samp></dd> 
+    <dt>  Book</dt>
+        <dd>- IT's Your Ship by: Captain D.Michael Abrashoff</dd>
+    <dt>  Movies</dt>
+        <dd>- Law Abiding Citizen</dd>   
+</dl>
+</div>               
+</section>
+</main> 
+    <h4 id="work">Work History</h4>
+    
+<!-- section Tables -->
+<section>
+    <div class="work">
+       
+<table>
+
+
+
+    <tr>
+        <th>Logo</th>
+        <th>Campany</th>
+        <th>How long</th>
+        <th>Position</th>
+    </tr>
+    <tr>
+        <td><img src="http://blog.logomyway.com/wp-content/uploads/2017/02/walmart-logo.jpg" width="70px" height="30px"></td>
+        <td>Walmart</td>
+        <td>6 months</td>
+        <td>IMS</td>
+        </tr>
+    <tr>
+        <td><img src="https://nresweb.imgix.net/S115/ResortsWest-01.jpg?auto=compress&auto=format" width="70px" height="30px"></td>
+        <td>Resorts West</td>
+        <td>1 year</td>
+        <td>Maintenance Technician</td>
+    </tr>
+    <tr>
+        <td><img src="https://webpass.net/images/blog/2016-06/googlefiber-digital-logo-gray.png" width="70px" height="30px"></td>
+        <td>Google Fiber</td>
+        <td>1 year/ 6 months</td>
+        <td> NetworkTroubleshooting</td>
+    </tr>
+</table>
+        </div>
+</section>
+    
+<section>
+    
+    <h4 id="ex">My Experiences</h4>      
+    
+    </section>
+      
+<!-- navigation  to defination my experiences -->
+<nav> 
+        
+ 
+    
+<ul>
+    <div class="handtools">
+    <li><img src="https://3.imimg.com/data3/ED/XV/MY-4214134/hand-tools-500x500.jpg" height="300" width="315" alt="handtools"><a href="https://www.homedepot.com/b/Tools-Hand-Tools/N-5yc1vZc1zg"  target="_blank"></a></li>
+    </div>
+    
+    <div class="powertools">
+    <li><img src="http://branfordbuilding.com/wp-content/uploads/Banner-PoWER-TOOLS-1024x356.png" alt="powertool" height="300px" width="315px"><a href="https://www.homedepot.com/b/Tools-Power-Tools/N-5yc1vZc298" target="_blank"></a></li>
+    </div>
+    
+    <div class="cable">
+    <li><img src="https://1mr0gq3hge3z9yd6y1xynyb8-wpengine.netdna-ssl.com/wp-content/uploads/2014/01/Network-Cabling.jpg" alt="cable" height="300" width="315"><a href="http://www.cablinginstall.com/articles/print/volume-4/issue-1/cable-installer-tips/efficiently-installing-multiple-cable-runs.html" target="_blank"></a></li>
+    </div>
+    
+    <div class="network">
+    <li><img src="https://www.gl.com/eMedia/images/network_monitor.png" alt="troubleshoting" height="300" width="317"><a href="https://support.google.com/fiber/troubleshooter/3241196?hl=en" target="_blank"></a></li>
+    </div>
+    
+    <div class="html">
+    <li><img src="https://www.esoftload.info/wp-content/uploads/2012/09/HTML5.png" alt="html" height="300" width="315"><a href="https://www.w3schools.com/html/default.asp" target="_blank"></a></li>
+    </div>
+    
+    <div class="css">
+    <li><img src="https://www.pinpointe.com/blog/wp-content/uploads/css-html-in-email.png" alt="css" height="300" width="315"><a href="https://www.w3schools.com/css/default.asp" target="_blank" ></a></li>
+    </div>
+    
+    <div class="java">
+    <li><img src="https://cdn.vox-cdn.com/thumbor/FDD76YJZJFPyNUfT3ZBHcnMA0Ec=/43x0:593x367/1200x800/filters:focal(43x0:593x367)/cdn.vox-cdn.com/uploads/chorus_image/image/48667835/dbgxt2rvpd26udoyzcqn.0.0.jpg" alt="java" height="300" width="315"><a href="https://java.com/en/" target="_blank"></a></li>
+    </div>
+    
+    <div class="php">
+    <li><img src="http://www.viralwaves.in/wp-content/uploads/2017/06/Php-Tutorials-for-beginner.jpg" alt="php" height="300" width="317"><a href="http://www.php.net/" target="_blank" ></a></li>
+    </div>
+    
+</ul>
+</nav>
+    
+<!-- aside -->
+<aside>
+<h5>To looking for a front End job without experience </h5>
+        
+<p>This video it show you how to find entrnship front end development job without experience.<br><em>Take a few minutes and look at this video</em></p>
+</aside>
+        
+<!-- display and play a YouTube video -->
+<iframe width="" height="" src="https://www.youtube.com/embed/ebJ0XBOjowo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<section>
+   <div class="end">         
+<!-- details , summary -->
+<details>    
+<summary>Contact</summary>
+<address>Phone: 801-500-2066<br>Email Address: azalmafra@gmail.com<br>
+<a href="http://www.facebook.com/aloabedyy" target="_blank">Visit me on facebook</a></address>
+</details>
+    
+ <!-- footer -->  
+<footer> Copyright &copy; Ahmed Almafrachi</footer>
+              
+    </div>
+</section>   
+</body>
+</html>
